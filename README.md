@@ -22,15 +22,13 @@ The dataset is preprocessed by handling missing values, encoding categorical fea
 
 ### Release Year Prediction
 
-- **Ensemble Regressor (RandomForestRegressor and XGBRegressor)**: RMSE on the test set - 2.19
+- **Random Forest Regressor**: RMSE on the test set - 0.24
 
-The XGBClassifier performed best for genre classification, while the Ensemble Regressor model achieved the lowest RMSE for release year prediction.
+The XGBClassifier performed best for genre classification, while the Random Forest Regressor model achieved the lowest RMSE for release year prediction.
 
 ## Future Improvements
 
-1. To enhance the regression task's performance, incorporating additional relevant features or acquiring a larger dataset could be explored. More diverse and informative data may lead to improved predictive accuracy for release year forecasting.
-
-2. For Genre Classification, for simplification, only the first Genre value is taken as the true genre. For multi-label classification,
+2. For Genre Classification, for simplification, only the first Genre value is taken as the true genre. For multi-label classification, we can explore other preprocessing techniques for handling multi-label classification problems such as Binary Relevance, Classifier Chains etc.
 
 ## Usage
 
